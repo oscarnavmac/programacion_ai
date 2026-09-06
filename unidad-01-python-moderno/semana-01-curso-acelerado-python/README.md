@@ -1,7 +1,8 @@
 # Semana 1: Curso acelerado de Python
 
-Sesión práctica de dos horas para establecer una base común de Python antes de
-trabajar con tipado, validación y herramientas de proyecto.
+Taller gradual para establecer una base común de Python, sin presuponer experiencia
+en programación. El material puede continuar en la siguiente sesión según el ritmo
+del grupo; la prioridad es resolver y explicar los ejercicios.
 
 ## Notebooks
 
@@ -20,12 +21,26 @@ Durante esta sesión no es necesario preparar un entorno local.
 
 ## Temas del curso acelerado
 
-- Sintaxis, expresiones y formato legible.
-- Funciones, módulos y cadenas.
-- Listas, tuplas, diccionarios y conjuntos.
-- Flujo de control, comprehensions y truthiness.
-- Excepciones y lectura inicial de errores.
-- Orientación a objetos básica cuando aporte al ejemplo.
+- Valores, cadenas, sintaxis y primeros pasos para principiantes.
+- Listas, slicing, tuplas, desempaquetado, diccionarios y conjuntos.
+- Mutabilidad, alias y copias de estructuras anidadas.
+- Decisiones, ciclos, comprehensions y distinción entre cero y ausencia.
+- Funciones, ordenamiento por criterio, conteo y agrupación.
+- Excepciones, validación de registros y comprobaciones con `assert`.
+- POO: clases, instancias, atributos, métodos y estado independiente.
+- Caso integrador: aceptar predicciones, conservar rechazos y resumir un lote.
+
+## Dinámica del taller
+
+La primera notebook incluye 14 ejercicios con la secuencia **predecir, ejecutar,
+explicar y modificar**, soluciones en un anexo final y retos opcionales. Las celdas
+de ejercicios quedan abiertas; los ejemplos se ejecutan sin completarlas. En el
+tramo de validación hay implementaciones de apoyo para continuar después del intento.
+
+Puede pausarse al terminar los primeros pasos, el taller de datos o el tramo de POO.
+El último ejercicio requiere editar una clase, volver a ejecutar su definición y
+reconstruir sus instancias. La segunda notebook conserva su recorrido independiente
+por el Zen; no está incluida en un límite conjunto de dos horas.
 
 ## Temas del Zen
 
