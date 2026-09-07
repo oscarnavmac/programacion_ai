@@ -27,8 +27,7 @@ unidad-01-python-moderno/
 
 ## Versión de Python
 
-El curso requiere Python 3.12 o posterior. Para demostraciones y preparación
-docente se recomienda Python 3.13.
+El curso requiere Python 3.12 o posterior aunque se recomienda Python 3.13.
 
 ## Unidad 1
 
