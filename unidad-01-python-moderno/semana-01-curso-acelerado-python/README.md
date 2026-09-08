@@ -4,6 +4,15 @@ Taller gradual para establecer una base común de Python, sin presuponer experie
 en programación. El material puede continuar en la siguiente sesión según el ritmo
 del grupo; la prioridad es resolver y explicar los ejercicios.
 
+## Presentación de apertura
+
+Antes de la notebook 1, revisaremos la asignatura, las tres unidades del curso,
+la evaluación, los materiales y una introducción a Python y su uso en IA.
+La presentación incluye 19 diapositivas y notas para el docente en el PowerPoint.
+
+- [Presentación editable en PowerPoint](./00_introduccion_programacion_ia.pptx)
+- [Versión PDF](./00_introduccion_programacion_ia.pdf)
+
 ## Notebooks
 
 | Notebook | Archivo en el repositorio | Google Colab |
