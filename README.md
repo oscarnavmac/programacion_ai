@@ -50,3 +50,9 @@ Estudia primero el curso acelerado y después las 19 reglas del Zen de Python.
 Las explicaciones están en español. La primera notebook permite código en español;
 a partir de la segunda, el código está en inglés. Las soluciones de los ejercicios
 están en bloques Markdown para consultar y copiar después de intentar resolverlos.
+
+## Sesión 2: Tipado y modelos de datos
+
+Continúa con la [guía de la sesión 2](./unidad-01-python-moderno/semana-02-tipado-pydantic/README.md):
+anotaciones, lectura de errores de mypy, Pydantic v2 y ocho ejercicios con
+configuración, registros y reportes. Incluye notebook y módulo reutilizable.
