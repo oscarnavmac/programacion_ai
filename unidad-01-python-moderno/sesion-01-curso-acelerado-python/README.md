@@ -9,7 +9,7 @@ del grupo; la prioridad es resolver y explicar los ejercicios.
 Antes de la notebook 1, revisaremos la asignatura, las tres unidades del curso,
 la evaluación, los materiales y una introducción a Python y su uso en IA.
 
-- [Presentación de introducción (PDF)](https://drive.google.com/file/d/18klbYcjpSpyDiwToHvbNQFEvy699FbK-/view?usp=drivesdk)
+- [Presentación de introducción (PDF)](https://drive.google.com/file/d/1Ls0122l-Fyyb7-adEzKu6HVJqUk8rHun/view?usp=sharing)
 
 ## Notebooks
 

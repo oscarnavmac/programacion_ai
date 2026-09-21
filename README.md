@@ -25,7 +25,7 @@ también se encuentran en el README de la sesión correspondiente.
 
 ## Presentaciones de la unidad 1
 
-1. [Introducción a Programación para Inteligencia Artificial (PDF)](https://drive.google.com/file/d/18klbYcjpSpyDiwToHvbNQFEvy699FbK-/view?usp=drivesdk)
+1. [Introducción a Programación para Inteligencia Artificial (PDF)](https://drive.google.com/file/d/1Ls0122l-Fyyb7-adEzKu6HVJqUk8rHun/view?usp=sharing)
 2. [PEP, anotaciones de tipo y Pydantic (PDF)](https://drive.google.com/file/d/1_2Bp0DOJYRTTAVd6tD1gruzsVrnT5Bru/view?usp=drivesdk)
 3. [Iteración, recursos y concurrencia (PDF)](https://drive.google.com/file/d/1gMZ1HGejLwIAsZf80W7OjOz9Ktkw5Arz/view?usp=drivesdk)
 4. [Organización y reproducibilidad de proyectos con uv (PDF)](https://drive.google.com/file/d/1L7z6CxmTSq6CT-fPHlxq593WCAa2HRcI/view?usp=drivesdk)
