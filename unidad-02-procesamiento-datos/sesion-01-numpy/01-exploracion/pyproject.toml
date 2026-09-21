@@ -1,0 +1,10 @@
+[project]
+name = "numpy-exploration"
+version = "0.1.0"
+description = "NumPy arrays and measurement data"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.2,<3"]
+
+[dependency-groups]
+dev = ["jupyterlab>=4,<5", "ipykernel>=6,<8", "nbconvert>=7,<8"]

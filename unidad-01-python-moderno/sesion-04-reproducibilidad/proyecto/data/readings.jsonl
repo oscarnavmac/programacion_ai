@@ -1,0 +1,4 @@
+{"station": "north", "temperature": 20.0}
+{"station": "south", "temperature": 24.0}
+{"station": "east", "temperature": "unknown"}
+{"station": "west", "temperature": 22.0}

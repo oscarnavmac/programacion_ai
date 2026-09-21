@@ -1,0 +1,61 @@
+# Python bytecode and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+
+# Tool caches and test artifacts
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pytype/
+.pyre/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Local logs
+logs/
+*.log
+*.log.*
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Operating system and editor temporary files
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+~$*
+*.swp
+*.swo
+*~
+
+# Local presentation sources and PDF exports (distributed through Google Drive)
+*.pptx
+u[0-9]*_p[0-9]*_*.pdf
+
+# Local institutional planning document
+PlaneacionDidactica_ProgramacionIA_Oscar.docx
+
+# Instructor solution keys
+SOLUCIONES.md
+NOTAS_DOCENTE.md
