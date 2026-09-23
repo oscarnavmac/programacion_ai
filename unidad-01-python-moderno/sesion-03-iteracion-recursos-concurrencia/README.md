@@ -12,6 +12,7 @@ Incluye dieciséis ejercicios numerados.
 - Iterables, iteradores, `iter()`, `next()` y agotamiento.
 - Funciones generadoras, `yield`, expresiones generadoras y consumo parcial.
 - Composición de transformaciones y errores diferidos.
+- Funciones como objetos, decoradores sencillos y `functools.wraps`.
 - `with`, `__enter__`, `__exit__` y `@contextmanager`.
 - Cierre de archivos ante errores e interrupciones del recorrido.
 - Procesamiento de registros y comparación de memoria con `tracemalloc`.
@@ -49,6 +50,7 @@ La parte asíncrona usa `await` directamente en Jupyter/Colab. El módulo
 El ejemplo representa la latencia de las lecturas con `asyncio.sleep` y permite
 observar las tareas activas y el cierre del cliente.
 
-Las secciones 1–10 desarrollan iteración y recursos; las secciones 11–16 incorporan
-concurrencia. La extensión con `to_thread` puede consultarse después de la práctica.
+Las secciones 1–10 desarrollan iteración, decoradores y recursos; las secciones
+11–16 incorporan concurrencia. La extensión con `to_thread` puede consultarse
+después de la práctica.
 Consulta las [fuentes oficiales](./FUENTES.md) para ampliar los conceptos.
