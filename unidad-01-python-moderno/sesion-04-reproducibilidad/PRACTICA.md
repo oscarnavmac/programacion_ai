@@ -50,4 +50,4 @@ para comprobarlo y deja los archivos generados fuera de Git.
 | Reproducción | Una copia limpia ejecuta los comandos del README. |
 
 Después se incorporan las comprobaciones del bloque
-[Calidad de código: pytest, Ruff y Makefile](./CALIDAD.md).
+[Calidad de código: pytest, Ruff, mypy y Makefile](./CALIDAD.md).

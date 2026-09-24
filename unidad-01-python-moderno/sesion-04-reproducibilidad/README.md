@@ -19,7 +19,7 @@ y reproducir el resultado.
 5. Logging: niveles, loggers, handlers y formato.
 6. Reproducción con `uv.lock` y control de versiones.
 7. [Ejercicios y reproducción desde una copia limpia](./PRACTICA.md).
-8. [Calidad de código: pytest, Ruff y Makefile](./CALIDAD.md).
+8. [Calidad de código: pytest, Ruff, mypy y Makefile](./CALIDAD.md).
 
 El último bloque utiliza la misma aplicación y puede continuarse en otra sesión.
 
@@ -44,6 +44,7 @@ uv sync --locked
 uv run --locked python main.py data/readings.jsonl
 uv run --locked ruff check .
 uv run --locked ruff format --check .
+uv run --locked mypy --strict main.py readings
 uv run --locked python -m pytest
 ```
 

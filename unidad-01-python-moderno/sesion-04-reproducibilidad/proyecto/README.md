@@ -19,6 +19,7 @@ La muestra contiene tres lecturas válidas, una rechazada y una media de 22.0.
 uv run --locked python main.py data/readings.jsonl > report.json
 uv run --locked ruff check .
 uv run --locked ruff format --check .
+uv run --locked mypy --strict main.py readings
 uv run --locked python -m pytest
 ```
 

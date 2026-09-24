@@ -365,5 +365,5 @@ instalarse en el entorno. Esa evolución cambia la instalación y los imports;
 no es necesario imponerla a toda aplicación pequeña.
 
 Continúa con los [ejercicios de organización y logging](./PRACTICA.md).
-El último tema es [Calidad de código: pytest, Ruff y Makefile](./CALIDAD.md),
+El último tema es [Calidad de código: pytest, Ruff, mypy y Makefile](./CALIDAD.md),
 que trabaja sobre esta misma aplicación.

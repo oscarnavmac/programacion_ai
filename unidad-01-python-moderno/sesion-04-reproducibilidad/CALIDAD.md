@@ -1,4 +1,4 @@
-# Calidad de código: pytest, Ruff y Makefile
+# Calidad de código: pytest, Ruff, mypy y Makefile
 
 Este bloque parte de la aplicación construida en la [guía](./GUIA.md).
 Se puede realizar al cerrar la sesión o continuar en una sesión posterior.
@@ -10,7 +10,7 @@ compartidos por el equipo.
 Desde la carpeta de tu aplicación:
 
 ```bash
-uv add --dev pytest ruff
+uv add --dev pytest ruff mypy
 ```
 
 Observa `[dependency-groups].dev` en `pyproject.toml`. Las bibliotecas necesarias
@@ -67,11 +67,23 @@ incluye [pruebas de procesamiento](./proyecto/tests/test_processing.py) y
 advertencias; ejecutar la aplicación como subproceso permite comprobar stdout,
 stderr y códigos de salida. [Captura de logs](https://docs.pytest.org/en/stable/how-to/logging.html).
 
+Mypy comprueba los tipos declarados en la aplicación sin ejecutarla. El comando
+revisa `main.py` y los módulos de `readings`; `--strict` activa comprobaciones
+adicionales. Ya usamos mypy en la sesión de anotaciones; aquí pasa a formar
+parte de la revisión habitual del proyecto.
+
+```bash
+uv run --locked mypy --strict main.py readings
+```
+
+[Uso de mypy desde la terminal](https://mypy.readthedocs.io/en/stable/getting_started.html).
+
 Antes de compartir:
 
 ```bash
 uv run --locked ruff check .
 uv run --locked ruff format --check .
+uv run --locked mypy --strict main.py readings
 uv run --locked python -m pytest
 ```
 
@@ -80,23 +92,26 @@ uv run --locked python -m pytest
 
 ## 3. Reunir comandos en un Makefile
 
-Un Makefile asocia nombres de tareas con comandos. `make` no reemplaza a uv,
-pytest ni Ruff: ejecuta las instrucciones que escribamos. Primero ejecuta cada
+Un Makefile asocia nombres de tareas con comandos. `make` ejecuta las
+instrucciones que escribamos. Primero ejecuta cada
 comando directamente para entenderlo.
 
 Copia [Makefile](./proyecto/Makefile) en la raíz de tu proyecto. Sus recetas
 empiezan con un carácter de tabulación real, no con espacios.
 
 ```makefile
-.PHONY: check lint format-check format test run sync
+.PHONY: check lint format-check types format test run sync
 
-check: lint format-check test
+check: lint format-check types test
 
 lint:
 	uv run --locked ruff check .
 
 format-check:
 	uv run --locked ruff format --check .
+
+types:
+	uv run --locked mypy --strict main.py readings
 
 format:
 	uv run --locked ruff format .
@@ -112,7 +127,7 @@ sync:
 ```
 
 Una regla tiene un objetivo, posibles prerrequisitos y una receta. `check` reúne
-las tres comprobaciones; la primera regla también lo convierte en el objetivo
+las cuatro comprobaciones; la primera regla también lo convierte en el objetivo
 por defecto al escribir `make`. `.PHONY` indica tareas que deben ejecutarse aunque
 exista un archivo llamado `test`, `run` o `check`.
 [Manual oficial de GNU Make](https://www.gnu.org/software/make/manual/make.html).
@@ -132,7 +147,7 @@ Comprueba `make --version`. En macOS puede estar disponible con las herramientas
 de línea de comandos; en Linux se instala desde el gestor de paquetes de la
 distribución. Windows no incluye GNU Make en PowerShell por defecto. Si ya
 trabajas en WSL, ejecuta todo el proyecto en ese entorno. En PowerShell puedes
-usar directamente los tres comandos `uv run --locked ...` del bloque anterior;
+usar directamente los cuatro comandos `uv run --locked ...` del bloque anterior;
 producen las mismas comprobaciones. Make no se instala mediante `uv add`.
 
 ## 4. Ejercicios de calidad

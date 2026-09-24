@@ -1,12 +1,15 @@
-.PHONY: check lint format-check format test run sync
+.PHONY: check lint format-check types format test run sync
 
-check: lint format-check test
+check: lint format-check types test
 
 lint:
 	uv run --locked ruff check .
 
 format-check:
 	uv run --locked ruff format --check .
+
+types:
+	uv run --locked mypy --strict main.py readings
 
 format:
 	uv run --locked ruff format .
