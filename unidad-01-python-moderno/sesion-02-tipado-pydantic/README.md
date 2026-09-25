@@ -13,6 +13,7 @@ Material de la sesión sobre anotaciones de tipo y validación de datos.
 2. BaseModel, conversiones, modo estricto, restricciones y errores.
 3. Validadores, configuración, modelos anidados y serialización.
 4. Procesamiento de registros con ocho ejercicios y casos límite.
+5. Una API pequeña que valida peticiones con Pydantic y FastAPI.
 
 ## Ejecutar en Colab o Jupyter
 
@@ -20,8 +21,9 @@ Material de la sesión sobre anotaciones de tipo y validación de datos.
 
 Abre la notebook con el botón de Google Colab o descarga el archivo del repositorio
 para trabajar en Jupyter. Ejecuta las celdas en orden desde una sesión limpia.
-La primera celda instala Pydantic 2.12.5 y mypy 1.19.1. La instalación necesita red;
-el resto de la lección funciona en CPU, sin credenciales ni servicios.
+La primera celda instala las dependencias, incluidas FastAPI y httpx2. La
+instalación necesita red; las peticiones del ejemplo se ejecutan dentro de la
+notebook con `TestClient`, sin iniciar un servidor.
 
 La notebook incluye una celda `%%writefile lesson_models.py` para poder trabajar
 sin archivos auxiliares en Colab. **Reemplaza ese archivo en el directorio de
@@ -48,5 +50,6 @@ Entrega tu copia del módulo con la función de conteos del ejercicio 8, sus
 comprobaciones y un reporte JSON reconstruible. Los criterios de revisión están
 en la notebook.
 
-API contrastada con documentación oficial de [Pydantic](https://docs.pydantic.dev/latest/concepts/models/)
-y [mypy](https://mypy.readthedocs.io/en/stable/getting_started.html).
+API contrastada con documentación oficial de [Pydantic](https://docs.pydantic.dev/latest/concepts/models/),
+[mypy](https://mypy.readthedocs.io/en/stable/getting_started.html) y
+[FastAPI](https://fastapi.tiangolo.com/tutorial/testing/).
